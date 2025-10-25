@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yarndings+20&display=swap");
+/* body {
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+} */
+.mediumroboto {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.lightroboto {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.boldroboto {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.bg-gradientmain {
+  background: linear-gradient(
+    -180deg,
+    #fbf1ff 0%,
+    #f6deffb1 20%,
+    #d6dbffc3 70%,
+    #fcfdff39 100%
+  );
+}
+
+.kategori div {
+  background-color: #aeccff;
+  color: #357fff;
+  height: 22px;
+  border-radius: 2px;
+  font-size: 10px;
+  width: fit-content;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-content: center;
+}
+
+#container-projek {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+
+  border-radius: 6px;
+  padding: 5px;
+  box-shadow: 0px 0px 8px 3px #88888850;
+}
+
+#pict-projek {
+  /* background-image: url(UX_UICaseStudy-Cosmeticse-commercemobileappdesign_.jpeg);
+  background-position: top; */
+  height: 180px;
+  border-radius: 3px;
+}

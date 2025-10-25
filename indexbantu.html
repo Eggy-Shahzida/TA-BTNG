@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Eggy</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- ========== NAVBAR ========== -->
+    <nav class="bg-white shadow-md fixed w-[90%] top-0 left-0 z-50">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center bg-red-300"
+      >
+        <h1 class="text-2xl font-bold text-teal-600">Eggy.</h1>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#hero" class="hover:text-teal-500">Home</a></li>
+          <li>
+            <a href="#portfolio" class="hover:text-teal-500">Portfolio</a>
+          </li>
+          <li><a href="#contact" class="hover:text-teal-500">Contact</a></li>
+        </ul>
+        <!-- Tombol menu untuk mobile -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-teal-600 focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
+      <!-- Menu Mobile -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200"
+      >
+        <ul class="px-6 py-3 space-y-3">
+          <li><a href="#hero" class="block hover:text-teal-500">Home</a></li>
+          <li>
+            <a href="#portfolio" class="block hover:text-teal-500">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="block hover:text-teal-500">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section
+      id="hero"
+      class="pt-24 md:pt-32 pb-16 bg-gradient-to-b from-teal-100 to-white"
+    >
+      <div
+        class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center"
+      >
+        <!-- Text -->
+        <div class="w-full md:w-1/2 text-center md:text-left space-y-4">
+          <h2 class="text-3xl md:text-5xl font-bold text-teal-700">
+            Halo, Saya Eggy 👋
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Saya seorang mahasiswa Sistem Informasi yang tertarik dengan dunia
+            Web Development dan UI Design.
+          </p>
+          <a
+            href="#portfolio"
+            class="inline-block bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition"
+          >
+            Lihat Karya Saya
+          </a>
+        </div>
+        <!-- Gambar -->
+        <div class="w-full md:w-1/2 mb-10 md:mb-0">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/921/921356.png"
+            alt="Hero Image"
+            class="w-3/4 mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PORTFOLIO SECTION ========== -->
+    <section id="portfolio" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-teal-700 mb-10">Portfolio</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card Project -->
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          >
+            <img
+              src="https://via.placeholder.com/400x250"
+              alt="Project 1"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Project 1</h3>
+              <p class="text-gray-600 text-sm">
+                Deskripsi singkat tentang project ini.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          >
+            <img
+              src="https://via.placeholder.com/400x250"
+              alt="Project 2"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Project 2</h3>
+              <p class="text-gray-600 text-sm">
+                Deskripsi singkat tentang project ini.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          >
+            <img
+              src="https://via.placeholder.com/400x250"
+              alt="Project 3"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Project 3</h3>
+              <p class="text-gray-600 text-sm">
+                Deskripsi singkat tentang project ini.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          >
+            <img
+              src="https://via.placeholder.com/400x250"
+              alt="Project 4"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Project 4</h3>
+              <p class="text-gray-600 text-sm">
+                Deskripsi singkat tentang project ini.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition"
+          >
+            <img
+              src="https://via.placeholder.com/400x250"
+              alt="Project 5"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Project 5</h3>
+              <p class="text-gray-600 text-sm">
+                Deskripsi singkat tentang project ini.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="py-16">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-teal-700 mb-10">Hubungi Saya</h2>
+        <form
+          class="max-w-lg mx-auto bg-white shadow-md rounded-lg p-6 space-y-4"
+        >
+          <input
+            type="text"
+            placeholder="Nama"
+            class="w-full border border-gray-300 p-3 rounded focus:outline-teal-500"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full border border-gray-300 p-3 rounded focus:outline-teal-500"
+            required
+          />
+          <textarea
+            placeholder="Pesan"
+            rows="5"
+            class="w-full border border-gray-300 p-3 rounded focus:outline-teal-500"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-teal-700 text-white text-center py-4">
+      <p>© 2025 Eggy | Dibuat dengan ❤️ dan Tailwind CSS</p>
+    </footer>
+
+    <!-- Script Menu Mobile -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
