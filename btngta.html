@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-grey-100">
+    <!-- =========== navbar =========== -->
+    <nav
+      class="w-full fixed fixed top-[10px] left-1/2 transform -translate-x-1/2 z-50"
+    >
+      <div
+        class="mx-auto px-6 py-3 flex justify-between items-center w-[350px] md:w-[700px] md:max-w-[900px] h-[45px] px-[19px] content-center bg-[#8E8E8E]/15 backdrop-blur-[10px] outline outline-[2px] outline-[#D7D7D7] rounded-full"
+      >
+        <img src="png/Subtract.png" class="w-[100px]" />
+        <ul class="hidden md:flex space-x-6 mediumroboto">
+          <li>
+            <a
+              href="#hero"
+              class="hover:text-[#bd39ff] hover:bg-[#de9bff69] rounded-full p-[8px]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="hover:text-[#bd39ff] hover:bg-[#de9bff69] rounded-full p-[8px]"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:text-[#bd39ff] hover:bg-[#de9bff69] rounded-full p-[8px]"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-teal-600 focus:outline-none"
+        >
+          <img src="png/menu.png" class="w-[20px]" />
+        </button>
+      </div>
+      <!-- ----------- Tampilan Mobile ------------ -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden mt-[10px] w-[350px] text-end mx-auto bg-[#8E8E8E]/20 backdrop-blur-[10px] outline outline-[2px] outline-[#D7D7D7] rounded-[25px]"
+      >
+        <ul class="px-6 py-3 space-y-3">
+          <li>
+            <a href="#hero" class="block hover:text-[#bd39ff]">Home</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="block hover:text-[#bd39ff]"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="block hover:text-[#bd39ff] scroll-smooth"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ======================= Hero Section ======================= -->
+
+    <section id="hero" class="bg-gradientmain w-full flex flex-col md:px-[5%]">
+      <!-- Opening -->
+      <div
+        class="mt-[122px] md:mt-[180px] flex flex-col md:grid md:grid-cols-3 md:gap-[0px] gap-[71px] lg:gap-[0px]"
+      >
+        <!-- 1 (judul main)-->
+        <div
+          class="md:col-span-2 text-center md:text-start w-[400px] md:w-[600px] lg:w-[700px] mx-auto md:py-7"
+        >
+          <p class="mediumroboto text-[20px] md:text-[27px] lg:text-[35px]">
+            Hi, Everyone this is my
+          </p>
+          <p class="boldroboto text-[33px] md:text-[43px] lg:text-[50px]">
+            Basic Training for Next Generation
+            <span class="fp">Final Project</span>
+          </p>
+        </div>
+        <!-- 2 (gambar telur)-->
+        <div class="w-50">
+          <img
+            src="png/ndog.png"
+            class="h-[170px] mx-auto md:w-[200px] lg:max-w-[400px] md:h-auto"
+          />
+        </div>
+        <!-- 3 (deskripsi btng) -->
+        <section
+          class="w-[300px] md:col-span-2 md:w-[500px] mx-auto text-center md:text-start lg:w-[700px]"
+        >
+          <p class="text-[14px]">
+            Basic Training for Next Generation is an activity organized by a
+            Udinus student activity unit, which is DNCC.
+          </p>
+          <p class="boldroboto text-[16px] mt-[20px]">
+            Let me introduce my BTNG final project
+          </p>
+        </section>
+        <div
+          class="mb-[50px] md:col-span-3 md:mt-[50px] md:mb-[120px] lg:mb-[130px]"
+        >
+          <img
+            id="downArrow"
+            src="png/down-arrow.png"
+            class="w-[30px] justify-self-center animate-bounce cursor-pointer"
+          />
+        </div>
+      </div>
+      <!-- /Opening -->
+    </section>
+
+    <!-- ================== Projek =================== -->
+    <section
+      id="portfolio"
+      class="projek px-[70px] md:px-[90px] lg:px-[110px] py-[50px] md:py-[80px]"
+    >
+      <!-- ----------- Awalan Projek ------------- -->
+      <div class="mb-[50px] ml-[0px] h-auto">
+        <p class="mediumroboto text-[25px] md:text-[30px] lg:text-[35px]">
+          Featured Project
+        </p>
+        <p class="lightroboto text-[13px] md:text-[17px]">
+          A collection of my best work
+        </p>
+        <div
+          class="kategori text-center flex gap-[10px] md:gap-[15px] mt-[7px] text-[12px] md:text-[15px]"
+        >
+          <button
+            class="btn-kategori bg-gray-300 text-gray-700 transition px-[8px] md:px-[11px] py-[4px]"
+          >
+            All
+          </button>
+          <button
+            class="btn-kategori bg-gray-300 text-gray-700 transition px-[8px] md:px-[11px] py-[4px]"
+          >
+            Web Development
+          </button>
+          <button
+            class="btn-kategori bg-gray-300 text-gray-700 transition px-[8px] md:px-[11px] py-[4px]"
+          >
+            Data Analytic
+          </button>
+        </div>
+      </div>
+      <!-- ----------------- Kontener Projek ---------------- -->
+      <div
+        class="flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-[40px] md:gap-y-[70px]"
+      >
+        <!-- 1 -->
+        <div
+          id="container-projek"
+          class="flex flex-col gap-[30px] max-w-[300px] lg:max-w-[400px] lg:min-w-[300px] md:max-w-[300px]"
+        >
+          <div
+            id="pict-projek"
+            class="bg-[url(png/UX_UICaseStudy-Cosmeticse-commercemobileappdesign_.jpeg)] bg-cover bg-center md:bg-cover-center h-[230px] md:h-[270px]"
+          ></div>
+          <div id="deskripsi-projek" class="mx-[30px]">
+            <h1 class="mediumroboto text-[17px]">E-commerce Platform Design</h1>
+            <h2 class="mediumroboto text-[15px]">PT. Dwi Jaya Mente</h2>
+            <div class="lightroboto text-[15px] mt-[15px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              pellentesque vitae sapien et ultrices. Curabitur sed faucibus
+              urna, eu malesuada arcu.
+            </div>
+          </div>
+
+          <button
+            class="btn-anim bg-[#347EFF] h-[30px] mt-[20px] mx-[30px] mb-[30px] text-white rounded-[10px] text-center pt-[3px] mediumroboto"
+          >
+            See Detail
+          </button>
+        </div>
+        <div
+          id="container-projek"
+          class="flex flex-col gap-[30px] max-w-[300px] lg:max-w-[400px] lg:min-w-[300px] md:max-w-[300px]"
+        >
+          <div
+            id="pict-projek"
+            class="bg-[url(UX_UICaseStudy-Cosmeticse-commercemobileappdesign_.jpeg)] bg-cover bg-center md:bg-cover-center h-[230px] md:h-[270px]"
+          ></div>
+          <div id="deskripsi-projek" class="mx-[30px]">
+            <h1 class="mediumroboto text-[17px]">E-commerce Platform Design</h1>
+            <h2 class="mediumroboto text-[15px]">PT. Dwi Jaya Mente</h2>
+            <div class="lightroboto text-[15px] mt-[15px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              pellentesque vitae sapien et ultrices. Curabitur sed faucibus
+              urna, eu malesuada arcu.
+            </div>
+          </div>
+
+          <button
+            class="btn-anim bg-[#347EFF] h-[30px] mt-[20px] mx-[30px] mb-[30px] text-white rounded-[10px] text-center pt-[3px] mediumroboto"
+          >
+            See Detail
+          </button>
+        </div>
+
+        <div
+          id="container-projek"
+          class="flex flex-col gap-[30px] max-w-[300px] lg:max-w-[400px] lg:min-w-[300px] md:max-w-[300px]"
+        >
+          <div
+            id="pict-projek"
+            class="bg-[url(UX_UICaseStudy-Cosmeticse-commercemobileappdesign_.jpeg)] bg-cover bg-center md:bg-cover-center h-[230px] md:h-[270px]"
+          ></div>
+          <div id="deskripsi-projek" class="mx-[30px]">
+            <h1 class="mediumroboto text-[17px]">E-commerce Platform Design</h1>
+            <h2 class="mediumroboto text-[15px]">PT. Dwi Jaya Mente</h2>
+            <div class="lightroboto text-[15px] mt-[15px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              pellentesque vitae sapien et ultrices. Curabitur sed faucibus
+              urna, eu malesuada arcu.
+            </div>
+          </div>
+
+          <button
+            class="btn-anim bg-[#347EFF] h-[30px] mt-[20px] mx-[30px] mb-[30px] text-white rounded-[10px] text-center pt-[3px] mediumroboto"
+          >
+            See Detail
+          </button>
+        </div>
+
+        <div
+          id="container-projek"
+          class="flex flex-col gap-[30px] max-w-[300px] lg:max-w-[400px] lg:min-w-[300px] md:max-w-[300px]"
+        >
+          <div
+            id="pict-projek"
+            class="bg-[url(UX_UICaseStudy-Cosmeticse-commercemobileappdesign_.jpeg)] bg-cover bg-center md:bg-cover-center h-[230px] md:h-[270px]"
+          ></div>
+          <div id="deskripsi-projek" class="mx-[30px]">
+            <h1 class="mediumroboto text-[17px]">E-commerce Platform Design</h1>
+            <h2 class="mediumroboto text-[15px]">PT. Dwi Jaya Mente</h2>
+            <div class="lightroboto text-[15px] mt-[15px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              pellentesque vitae sapien et ultrices. Curabitur sed faucibus
+              urna, eu malesuada arcu.
+            </div>
+          </div>
+
+          <button
+            class="btn-anim bg-[#347EFF] h-[30px] mt-[20px] mx-[30px] mb-[30px] text-white rounded-[10px] text-center pt-[3px] mediumroboto"
+          >
+            See Detail
+          </button>
+        </div>
+
+        <div
+          id="container-projek"
+          class="flex flex-col gap-[30px] max-w-[300px] lg:max-w-[400px] lg:min-w-[300px] md:max-w-[300px]"
+        >
+          <div
+            id="pict-projek"
+            class="bg-[url(UX_UICaseStudy-Cosmeticse-commercemobileappdesign_.jpeg)] bg-cover bg-center md:bg-cover-center h-[230px] md:h-[270px]"
+          ></div>
+          <div id="deskripsi-projek" class="mx-[30px]">
+            <h1 class="mediumroboto text-[17px]">E-commerce Platform Design</h1>
+            <h2 class="mediumroboto text-[15px]">PT. Dwi Jaya Mente</h2>
+            <div class="lightroboto text-[15px] mt-[15px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              pellentesque vitae sapien et ultrices. Curabitur sed faucibus
+              urna, eu malesuada arcu.
+            </div>
+          </div>
+
+          <button
+            class="btn-anim bg-[#347EFF] h-[30px] mt-[20px] mx-[30px] mb-[30px] text-white rounded-[10px] text-center pt-[3px] mediumroboto"
+          >
+            See Detail
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Get in Touch =================== -->
+    <section class="bg-gradientmain py-[50px] md:py-[80px]">
+      <div
+        class="shadow1 bg-white mx-[30px] md:mx-auto md:max-w-[500px] px-5 py-5 rounded-lg"
+      >
+        <p class="boldroboto text-[30px]">Get in Touch</p>
+        <p class="lightroboto text-[15px] mb-[30px]">
+          Feel free to reach out for collaborations or just a friendly hello!
+        </p>
+        <form action="">
+          <label for="nama">First Name</label>
+          <input
+            type="text"
+            placeholder="First Name"
+            class="w-full border border-gray-300 p-3 rounded focus:outline-teal-500 mb-[20px]"
+            required
+          />
+
+          <label for="nama">Last Name</label>
+          <input
+            type="text"
+            placeholder="Last Name"
+            class="w-full border border-gray-300 p-3 rounded focus:outline-teal-500 mb-[20px]"
+            required
+          />
+
+          <label for="nama">Email</label>
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full border border-gray-300 p-3 rounded focus:outline-teal-500 mb-[20px]"
+            required
+          />
+
+          <button
+            type="submit"
+            class="w-full h-[40px] bg-[#347EFF] text-white mediumroboto"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- =================== Kontak =================== -->
+    <section
+      id="contact"
+      class="shadow1 bg-[#082D4C] md:justify-between md:gap-x-[80px] w-full flex flex-col md:flex-row px-[30px] md:px-[50px] py-[30px] md:py-[50px]"
+    >
+      <div class="">
+        <img src="png/Subtract-w.png" class="w-[150px] mb-[30px]" />
+        <p class="lightroboto text-white mb-[30px]">
+          Your one-stop solution for all digital needs. Crafting beautiful and
+          functional websites to elevate your online presence.
+        </p>
+        <div class="flex gap-[20px]">
+          <button>
+            <a
+              href="https://www.linkedin.com/in/eggy-shahzida-666966332/"
+              target="_blank"
+            >
+              <img src="png/linkedin.png" class="sosmed w-[30px]"
+            /></a>
+          </button>
+          <button>
+            <a href="https://github.com/Eggy-Shahzida" target="_blank"
+              ><img src="png/github.png" class="sosmed w-[30px]"
+            /></a>
+          </button>
+          <button>
+            <a href="https://www.instagram.com/eggyshahzidaa/" target="_blank"
+              ><img src="png/ig.png" class="sosmed w-[30px]"
+            /></a>
+          </button>
+        </div>
+      </div>
+      <div class="md:flex md:flex-row md:gap-x-[60px]">
+        <div class="flex text-white mt-[30px]">
+          <ul class="">
+            <li class="my-[25px] font-bold">Portfolio</li>
+            <li class="my-[20px]">Projects</li>
+            <li class="my-[20px]">Case Studies</li>
+            <li class="my-[20px]">Skills</li>
+            <li class="my-[20px]">Experience</li>
+          </ul>
+        </div>
+        <div class="flex text-white mt-[30px]">
+          <ul class="">
+            <li class="my-[25px] font-bold">Portfolio</li>
+            <li class="my-[20px]">Projects</li>
+            <li class="my-[20px]">Case Studies</li>
+            <li class="my-[20px]">Skills</li>
+            <li class="my-[20px]">Experience</li>
+          </ul>
+        </div>
+        <div class="flex text-white mt-[30px]">
+          <ul class="">
+            <li class="my-[25px] font-bold">Portfolio</li>
+            <li class="my-[20px]">Projects</li>
+            <li class="my-[20px]">Case Studies</li>
+            <li class="my-[20px]">Skills</li>
+            <li class="my-[20px]">Experience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
